@@ -1,173 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Fotografia - Jullio César</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            color: blue;
-            line-height: 1.6;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 2rem 1rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            margin: 0.5rem 0 0 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .about {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .about h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1rem;
-            margin-bottom: 3rem;
-        }
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        .photo-item {
-            position: relative;
-            overflow: hidden;
-        }
-        .photo-item .overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 1rem;
-            transform: translateY(100%);
-            transition: transform 0.3s ease;
-        }
-        .photo-item:hover .overlay {
-            transform: translateY(0);
-        }
-        .contact {
-            text-align: center;
-            background-color: #34495e;
-            color: white;
-            padding: 2rem;
-        }
-        .contact h2 {
-            margin-bottom: 1rem;
-        }
-        .contact p {
-            margin: 0.5rem 0;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #2c3e50;
-            color: white;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Meu Currículo Moderno</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+rel="stylesheet">
+ <link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+rel="stylesheet">
+ <style>
+ body { font-family: 'Inter', sans-serif; color: blue; }
+ /* Adicione CSS personalizado aqui */
+ </style>
 </head>
 <body>
-    <header>
-        <h1>Jullio César</h1>
-        <p>A beleza começa no momento em que você decide ser você mesmoSS</p>
-    </header>
-
-    <div class="container">
-        <section class="about">
-            <h2>Sobre Mim</h2>
-            <p>Sou um fotógrafo apaixonado por capturar momentos únicos e belas paisagens. Com anos de experiência, especializo-me em fotografia de natureza, retratos e eventos. Explore meu portfólio abaixo e entre em contato para projetos personalizados.</p>
-        </section>
-
-        <section class="gallery">
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Natureza+1" alt="Foto de Natureza 1">
-                <div class="overlay">
-                    <h3>Natureza 1</h3>
-                    <p>Uma bela paisagem capturada ao amanhecer.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Retrato+1" alt="Retrato 1">
-                <div class="overlay">
-                    <h3>Retrato 1</h3>
-                    <p>Um retrato expressivo de um modelo.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Evento+1" alt="Evento 1">
-                <div class="overlay">
-                    <h3>Evento 1</h3>
-                    <p>Momento especial de um casamento.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/9C27B0/FFFFFF?text=Natureza+2" alt="Foto de Natureza 2">
-                <div class="overlay">
-                    <h3>Natureza 2</h3>
-                    <p>Floresta densa com luz filtrada.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/607D8B/FFFFFF?text=Retrato+2" alt="Retrato 2">
-                <div class="overlay">
-                    <h3>Retrato 2</h3>
-                    <p>Expressão de alegria e vitalidade.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="https://via.placeholder.com/400x300/795548/FFFFFF?text=Evento+2" alt="Evento 2">
-                <div class="overlay">
-                    <h3>Evento 2</h3>
-                    <p>Cerimônia ao pôr do sol.</p>
-                </div>
-            </div>
-            <div class="photo-item">
-                <img src="Imagens/foto-jullio.jpg" alt="Foto do Jullio com bola" onerror="this.src='https://via.placeholder.com/400x300/000000/FFFFFF?text=Imagem+não+encontrada'">
-                <div class="overlay">
-                    <h3>Foto Especial</h3>
-                    <p>Foto inserida diretamente do diretório local.</p>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <section class="contact">
-        <h2>Contato</h2>
-        <p>Email: jullio.fotografo@example.com</p>
-        <p>Telefone: (11) 999009-9999</p>
-        <p>Instagram: @julliofotografo</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Jullio César. Todos os direitos reservados.</p>
-    </footer>
-</body>
+ <script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></body>
 </html>
